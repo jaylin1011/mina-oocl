@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/news/news",
+    "pages/article/article",
+    "pages/picture/picture",
+    "pages/about/about",
+    "pages/link/link"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d63246",
+    "navigationBarTitleText": "东方海外",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d63246",
+    "backgroundColor": "#e8e8e8",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻中心",
+        "iconPath": "assets/icons/news.png",
+        "selectedIconPath": "assets/icons/news-active.png"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "图片库",
+        "iconPath": "assets/icons/picture.png",
+        "selectedIconPath": "assets/icons/picture-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "assets/icons/share.png",
+        "selectedIconPath": "assets/icons/share-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

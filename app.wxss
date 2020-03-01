@@ -1,0 +1,6 @@
+/**app.wxss**/
+@import "/styles/reset.wxss";
+@import "/lib/animate.wxss";
+@import "/styles/icon.wxss";
+@import "/styles/base.wxss";
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";

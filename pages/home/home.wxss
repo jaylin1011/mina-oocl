@@ -1,0 +1,50 @@
+/* pages/home/home.wxss */
+/* pages/home.wxss */
+
+.swiper-list {
+  height: calc(100vw * 1200 / 1800);
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-btn {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.menu-btn-show {
+  position: absolute;
+  top: 220rpx;
+}
+
+.grid-icon {
+  height: 100rpx;
+  width: 100rpx;
+}
+.grid-item-active {
+  background-color: var(--WHITE);
+}
+
+.weui-panel__bd {
+  border-top: 2rpx solid var(--GRAY);
+  border-bottom: 2rpx solid var(--GRAY);
+}
+
+.service-item {
+  padding-left: 200rpx;
+}
+.service-item:active {
+  background-color: var(--GROWN);
+}
+.highlight-item:active {
+  background-color: var(--THEME);
+}
+.w-40 {
+  width: 40%;
+}
+.w-90 {
+  width: 90%;
+}

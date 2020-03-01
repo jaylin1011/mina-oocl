@@ -1,0 +1,28 @@
+<!--pages/article/article.wxml-->
+<view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1 mb-0">{{article.title}}</view>
+      <view class="weui-media-box__desc my-5">发表于：{{article.date}}</view>
+      <view class="weui-article__section">
+        <!-- <view class="weui-article__h2">{{article.title}}</view> -->
+        <view class="weui-article__section">
+          <image class="w-100" src="{{article.icon}}" />
+          <!-- <view class="weui-article__h3">1.1 节标题</view> -->
+          <view class="weui-article__p">
+
+            <rich-text class="" nodes="{{article.content}}" type="node">
+
+            </rich-text>
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">关于东方海外</view>
+          <view class="weui-article__p">
+            {{about}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

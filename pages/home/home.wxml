@@ -1,0 +1,79 @@
+<!--pages/home.wxml-->
+<view class="home">
+  <!-- swiper area -->
+  <view>
+    <swiper class="swiper-list" indicator-dots="false" indicator-color="rgba(0,0,0,.3)" autoplay="false"
+      current="0" interval="2000" duration="1000" circular="false">
+      <swiper-item wx:for="{{swiperList}}" wx:key="id">
+<image class="w-100" src="{{item.url}}" mode="widthFit" lazy-load="false" />
+      </swiper-item>
+    </swiper>
+  </view>
+    <!-- cells area -->
+    <view class="page">
+      <view class="page__hd">
+          <view class="page__title text-center fs-lg fw-bold text-primary my-5">热点推荐</view>
+      </view>
+      <view class="weui-panel__bd">
+        <block wx:for="{{newsList}}" wx:key="id">
+          <navigator url="/pages/article/article?id={{item._id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="{{item.icon}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <!-- <view class="weui-media-box__title">{{item.title}}</view> -->
+                <rich-text class="weui-media-box__desc" nodes="{{item.content}}" type="node"></rich-text>
+            </view>
+        </navigator>
+        </block>
+      </view>
+    </view>
+  <!-- grid area -->
+  <view class="page">
+    <view class="page__hd">
+        <view class="page__title text-center fs-lg fw-bold text-primary my-5">电子商务</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids bgc-gray">
+            <block wx:for="{{gridList}}" wx:key="id">
+                <navigator url="/pages/home/home" class="weui-grid" hover-class="weui-grid_active grid-item-active" bindtap="handleTap">
+                    <image class="weui-grid__icon grid-icon" src="{{item.icon}}" />
+                    <view class="weui-grid__label fs-md fw-bold">{{item.title}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+  </view>
+    <!-- services area -->
+    <view>
+      <view class="text-center fs-lg fw-bold text-primary my-5">
+        OOCL服务
+    </view>
+    <view class="d-flex flex-wrap bgc-gray jc-around pb-5">
+      <view class="service-item w-90 bgc-primary text-white fs-md fw-bold mt-5 py-5" wx:for="{{serviceList}}" wx:key="id" bindtap="handleTap">
+        <text class="iconfont {{item.icon}} text-white mr-3"></text>
+          {{item.title}}
+      </view>
+    </view>
+    </view>
+    <!-- highlight area -->
+    <view>
+      <view class="text-center fs-lg fw-bold text-primary my-5">
+        航线
+    </view>
+    <view class="d-flex flex-wrap bgc-gray jc-around pb-5">
+      <view wx:for="{{highlightList}}" wx:key="id" class="{{item.width}} highlight-item bgc-brown text-white fs-md fw-bold text-center mt-5 p-5" bindtap="handleTap">
+          {{item.content}}
+      </view>
+    </view>
+    </view>
+    <!-- footer -->
+    <view>
+      <view class="text-center bgc-dark text-white py-4">
+        {{footer.text1}}
+      </view>
+      <view class="text-center bgc-dark text-white pb-4">
+        {{footer.text2}}
+      </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/picture/picture.wxss */
+.img_area {
+  background-color: var(--THEME);
+  position: relative;
+  height: 800rpx;
+  box-shadow: 10rpx 10rpx 10rpx #333;
+}
+.img_area image {
+  height: 800rpx;
+  vertical-align: middle;
+}
+
+.img_mask {
+  height: 240rpx;
+  line-height: 240rpx;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-gallery": "/weui-miniprogram/gallery/gallery",
+    "mp-badge": "/weui-miniprogram/badge/badge"
+  },
+  "navigationBarTitleText": "图片库"
+}

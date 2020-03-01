@@ -1,0 +1,24 @@
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 28rpx;
+  /* color: var(--primaryColor); */
+}
+
+page {
+  height: 100vh;
+  width: 100%;
+  --THEME: #d63246;
+  --WHITE: #fff;
+  --BLACK: #000;
+  --DARK: #333;
+  --GRAY: #eee;
+  --GROWN: #9f7c65;
+}

@@ -1,0 +1,27 @@
+<!--pages/link/link.wxml-->
+<mp-vtabs 
+  tabLineColor="var(--THEME)"
+  tabActiveTextColor="var(--THEME)"
+  tabBarClass="bgc-gray"
+  vtabs="{{vtabs}}" 
+  activeTab="{{activeTab}}" 
+  bindtabclick="onTabCLick"
+  class="test"
+>
+  <!-- <block wx:for="{{vtabs}}" wx:key="title" >
+    <mp-vtabs-content tabIndex="{{index}}">
+      <view class="vtabs-content-item px-5">
+        <view class="fw-bold text-center my-3">{{item.title}}</view>
+        <rich-text class="text-dark"  nodes="{{item.content}}" type="node"></rich-text>
+      </view>
+    </mp-vtabs-content>
+  </block> -->
+
+    <mp-vtabs-content tabIndex="{{index}}">
+      <view class="px-5 h-100 vh-100">
+        <view class="fw-bold text-center my-3">{{activeContent.title}}</view>
+        <rich-text class="text-dark"  nodes="{{activeContent.content}}" type="node"></rich-text>
+      </view>
+    </mp-vtabs-content>
+
+</mp-vtabs>

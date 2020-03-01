@@ -1,0 +1,12 @@
+<!--pages/picture/picture.wxml-->
+<view class="pictures w-100 px-5 pt-3">
+  <block wx:for="{{ pictures }}" wx:key="id">
+    <view class="img_area w-100 my-5" bindtap="handleTap" data-index="{{index}}">
+      <image class="w-100" src="{{item.imgUrls[0]}}" mode="aspectFill" lazy-load="false" />
+      <view class="img_mask text-white text-center w-100 fw-bold fs-xl">
+        {{item.category}}<mp-badge style="margin-left: 5px;" content="{{item.imgUrls.length}} pics"/>
+      </view>
+    </view>
+  </block>
+  <mp-gallery show="{{show}}" bindchange="change" bindhide="hide" img-urls="{{imgUrls}}" current="{{current}}"></mp-gallery>
+</view>
